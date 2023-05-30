@@ -1,0 +1,15 @@
+TARGET = main
+CC = gcc
+TARGET_DIR = target
+SOURCE_DIR = src
+TARGET_FILE = $(TARGET_DIR)/$(TARGET)
+SOURCE_FILE = $(SOURCE_DIR)/$(TARGET).c
+$(TARGET_FILE): $(SOURCE_FILE) $(TARGET_DIR)
+	$(CC) $(SOURCE_FILE) -o $(TARGET_FILE)
+$(TARGET_DIR):
+	mkdir $(TARGET_DIR)
+clean:
+	rm -rf $(TARGET_DIR)
+new:
+	mkdir $(SOURCE_DIR)
+	touch $(SOURCE_FILE)
