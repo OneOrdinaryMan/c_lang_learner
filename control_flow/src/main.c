@@ -19,4 +19,5 @@ int main() {
   default:
     printf("Not an answer\n");
   }
+  return 0;
 }

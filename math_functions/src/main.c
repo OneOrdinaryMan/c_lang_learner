@@ -13,4 +13,5 @@ int main() {
   double j = tan(45);
   printf("%lf, %lf, %d, %d, %d, %f, %lf, %lf,%lf, %lf\n", a, b, c, d, e, f, g,
          h, i, j);
+  return 0;
 }
