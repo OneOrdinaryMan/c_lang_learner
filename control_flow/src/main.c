@@ -19,5 +19,9 @@ int main() {
   default:
     printf("Not an answer\n");
   }
+  int num1 = 5;
+  int num2 = 6;
+  int max = (num1 > num2) ? num1 : num2;
+  printf("%d\n", max);
   return 0;
 }
