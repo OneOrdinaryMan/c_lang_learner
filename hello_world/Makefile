@@ -13,3 +13,5 @@ clean:
 new:
 	mkdir $(SOURCE_DIR)
 	touch $(SOURCE_FILE)
+run: $(TARGET_FILE)
+	./$(TARGET_FILE)
